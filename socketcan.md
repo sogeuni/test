@@ -1,6 +1,8 @@
-# SocketCAN
+---
+title: socketCAN
+---
 
-aaaaaaaa
+# SocketCAN
 
 > 이 글은 [https://www.kernel.org/doc/Documentation/networking/can.txt](https://www.kernel.org/doc/Documentation/networking/can.txt) 문서에 대한 번역입니다.
 
