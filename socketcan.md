@@ -1,5 +1,7 @@
 # SocketCAN
 
+aaaaaaaa
+
 > 이 글은 [https://www.kernel.org/doc/Documentation/networking/can.txt](https://www.kernel.org/doc/Documentation/networking/can.txt) 문서에 대한 번역입니다.
 
 Controller Area Network(CAN) 프로토콜 패밀리(속칭 SocketCAN)에 대한 readme 파일
