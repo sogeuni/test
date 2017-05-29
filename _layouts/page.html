@@ -24,5 +24,26 @@ layout: default
 </nav>
 
 <div class="container">
-
+  <div class="row">
+  {% if page.sidebar %}
+    <div class="col-md-9 col-md-push-3">
+  {% else %}
+    <div class="col-md-12">
+  {% endif %}
+      <div class="row">
+        <div class="col-md-2 col-md-push-10">
+        toc
+        </div>
+        <div class="col-md-10 col-md-pull-2">
+        {{ content }}
+        </div>
+      </div>
+    </div>
+  {% if page.sidebar %}
+    <div class="col-md-3 col-md-pull-9">
+      {% capture data %}{% include_relative /_sidebar/{{ page.sidebar }} %}{% endcapture %}
+      {% include sidebar.html content=data %}
+    </div>
+  {% endif %}
+  </div>
 </div><!-- /.container -->

@@ -1,5 +1,23 @@
 ---
 layout: page
+sidebar: test.md
 ---
 
-aaa
+adfad
+f
+adfa
+df
+adf
+ad
+f
+
+
+
+asdfadsf
+
+
+
+adsfadsf
+
+
+adsfadsf
