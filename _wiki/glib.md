@@ -1,8 +1,7 @@
 ---
-layout: page
 title:  해시 테이블
-date:   2017-05-30 01:08:00 +0800
-sidebar: test.md
+<!-- categories: develop aaa -->
+tag: glib
 ---
 
 * content

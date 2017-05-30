@@ -2,48 +2,29 @@
 layout: default
 ---
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">sogn.io</a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
-
 <div class="container">
   <div class="row">
   {% if page.sidebar %}
-    <div class="col-md-9 col-md-push-3">
+    <div class="col-md-10 col-md-push-2">
   {% else %}
     <div class="col-md-12">
   {% endif %}
       <div class="row">
-        <div class="col-md-2 col-md-push-10">
-        toc
+        <div class="col-md-3 col-md-push-9">
+        {% include toc.html %}
         </div>
-        <div class="col-md-10 col-md-pull-2">
+        <div class="col-md-9 col-md-pull-3 content">
         {{ content }}
         </div>
       </div>
     </div>
   {% if page.sidebar %}
-    <div class="col-md-3 col-md-pull-9">
+    <div class="col-md-2 col-md-pull-10">
       {% capture data %}{% include_relative /_sidebar/{{ page.sidebar }} %}{% endcapture %}
       {% include sidebar.html content=data %}
     </div>
   {% endif %}
   </div>
-</div><!-- /.container -->
+</div>
+
+{% include comment.html %}

@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: sogn.io
 email: sogeuni@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -26,9 +26,28 @@ github_username:  sogeuni
 
 # Build settings
 markdown: kramdown
-# theme: minima
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  auto_id_prefix: "_"
+  toc_levels: 2..3
+  enable_coderay: false
+
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+
+collections:
+  wiki:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: "_wiki"
+    values:
+      layout: page
