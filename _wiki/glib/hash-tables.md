@@ -1,6 +1,6 @@
 ---
-title:  해시 테이블
-<!-- categories: develop aaa -->
+title: 해시 테이블 (Hash Tables)
+sidebar: glib.md
 tag: glib
 ---
 

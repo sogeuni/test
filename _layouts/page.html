@@ -20,7 +20,7 @@ layout: default
     </div>
   {% if page.sidebar %}
     <div class="col-md-2 col-md-pull-10">
-      {% capture data %}{% include_relative /_sidebar/{{ page.sidebar }} %}{% endcapture %}
+      {% capture data %}{% include sidebar/{{ page.sidebar }} %}{% endcapture %}
       {% include sidebar.html content=data %}
     </div>
   {% endif %}
