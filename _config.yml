@@ -35,6 +35,10 @@ kramdown:
   toc_levels: 2..3
   enable_coderay: false
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 gems:
   - jekyll-feed
   - jekyll-relative-links
